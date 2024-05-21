@@ -1,0 +1,40 @@
+#about_pic{
+    width: 100%;
+    padding-top: 1.5%;
+}
+.welcome{
+    width: 80%;
+    border: solid;
+    border-width: 2px;
+    margin: 0% 10%;
+    position: relative;
+}
+table caption{
+    margin: 1% auto;
+    background-color: rgb(122, 175, 227);
+    font-size: 120%;
+    font-weight: bold;
+}
+table th{
+    border: solid black;
+    background-color:rgb(75, 135, 195) ;
+    width: 25%;
+}
+
+table td{
+    border: solid black; 
+    background-color: rgb(100, 185, 225); 
+}
+table td:hover{
+    background-color: rgb(201, 125, 125);
+}
+
+table{
+    width: 80%;
+    margin: 0% 10% 2%;
+    border: solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+

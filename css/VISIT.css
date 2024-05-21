@@ -1,0 +1,45 @@
+#welcome{
+    text-align: center;
+    margin: 5% auto;
+}
+#image{
+    float: left;
+    margin: auto 5% 5%;
+    height: 40%;
+    width: 45%;
+}
+#location{
+    margin: auto 10%;
+    float: left;
+}
+.reservation{
+    clear: both;
+}
+.reservation h3{
+    text-align: center;
+    font-size: 28px;
+} 
+.reservation fieldset{
+    width: 50%;
+    margin: auto 25% 2%;
+}
+#check{
+    background-color: rgb(150, 150, 150);
+}
+#check:hover{
+    background-color: rgb(198, 198, 198);
+    box-shadow: 5px 5px 10px rgba(0,0,0,1);
+}
+#check:active{
+    background-color: rgb(75, 75, 75);
+}
+#reset{
+    background-color: rgb(150, 150, 150);
+}
+#reset:hover{
+    background-color: rgb(198, 198, 198);
+    box-shadow: 5px 5px 10px rgba(0,0,0,1);
+}
+#reset:active{
+    background-color: rgb(75, 75, 75);
+}

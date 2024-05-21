@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nushrah Yanida">
+    <meta name="description" content="List Maker">
+    <meta name="keywords" content="List">
+    <title>List Maker Page</title>
+    <link rel="stylesheet" href="../css/theme.css" media="screen">
+    <link rel="stylesheet" href="../css/APPLY.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../css/printApply.css" media="print">
+    <script src="../scripts/apply.js"></script>
+</head>
+
+<body onload="apply();">
+    <div id="head">
+        <header>
+            <img src="../images/clipboard.png" alt="clipboard logo" width="300" height="300">
+                
+                <div id="taskhead"><h1> Task Manager </h1></div>
+        </header>
+    </div>
+    <div id="navigation">
+        <nav>
+            
+            <div><a href="../index.html">Home</a></div>
+            <div><a href="./instructions.html" >Instructions</a></div>
+            <div><a href="./list_maker.html">List-Maker</a></div>
+
+            
+        </nav>
+    </div>
+    <p id="welcome">Your list for today:</p>
+
+    <div class="all_majors">
+        <h2>Add the tasks you need to complete</h2>
+        <div id="house">Household</div>
+        <div id="study">Study</div>
+        <div id="errand">Errands</div>
+        <div id="engineering">
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/bed.png" alt="bed" width="100" height="100">
+                    <br>
+                    <label for="bed">Make the bed </label>
+                    <br>
+                    <input type="text" id="bed" name="bed">
+                    <button id="btn2">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/mop.png" alt="mop" width="100" height="100">
+                    <br>
+                    <label for="mop">Mop the floors </label>
+                    <br>
+                    <input type="text" id="mop" name="mop">
+                    <button id="btn3">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/kitch.png" alt="kitch" width="100" height="100">
+                    <br>
+                    <label for="kitch">Clean the kitchen </label>
+                    <br>
+                    <input type="text" id="kitch" name="kitch">
+                    <button id="btn4">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/meal.png" alt="meal" width="100" height="100">
+                    <br>
+                    <label for="meal">Cook a meal </label>
+                    <br>
+                    <input type="text" id="meal" name="meal">
+                    <button id="btn5">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/lawn.png" alt="lawn" width="100" height="100">
+                    <br>
+                    <label for="lawn">Mow the lawn </label>
+                    <br>
+                    <input type="text" id="lawn" name="lawn">
+                    <button id="btn6">rank of choice</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="science">
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/hw.png" alt="hw" width="100" height="100">
+                    <br>
+                    <label for="hw">Do homework </label>
+                    <br>
+                    <input type="text" id="hw" name="hw">
+                    <button id="btn7">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/bag.png" alt="bag" width="100" height="100">
+                    <br>
+                    <label for="bag">Pack the bag </label>
+                    <br>
+                    <input type="text" id="bag" name="bag">
+                    <button id="btn8">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/test.png" alt="test" width="100" height="100">
+                    <br>
+                    <label for="test">Study for the test </label>
+                    <br>
+                    <input type="text" id="test" name="test">
+                    <button id="btn9">rank of choice</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="studies">
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/groc.png" alt="groc" width="100" height="100">
+                    <br>
+                    <label for="groc">Do groceries </label>
+                    <br>
+                    <input type="text" id="groc" name="groc">
+                    <button id="btn10">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/dry.png" alt="dry" width="100" height="100">
+                    <br>
+                    <label for="dry">Pick up the dry-cleaning </label>
+                    <br>
+                    <input type="text" id="dry" name="dry">
+                    <button id="btn11">rank of choice</button>
+                </form>
+            </div>
+            <div>
+                <form method="get" action="#">
+                    <img src="../images/bank.png" alt="bank" width="100" height="100">
+                    <br>
+                    <label for="bank">Go to the bank </label>
+                    <br>
+                    <input type="text" id="bank" name="bank">
+                    <button id="btn12">rank of choice</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="chosen_majors">
+        <h1>Your added tasks: </h1>
+        <h3>Last change time: <span id="last_time"></span></h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categories</th>
+                    <th>Tasks</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="odd1">
+                    <td id="cat1"></td>
+                    <td id="tsk1"></td>
+                    <td id="td1">1</td>
+                </tr>
+                <tr id="even1">
+                    <td id="cat2"></td>
+                    <td id="tsk2"></td>
+                    <td id="td2">2</td>
+                </tr>
+                <tr id="odd2">
+                    <td id="cat3"></td>
+                    <td id="tsk3"></td>
+                    <td id="td3">3</td>
+                </tr>
+                <tr id="even2">
+                    <td id="cat4"></td>
+                    <td id="tsk4"></td>
+                    <td id="td4">4</td>
+                </tr>
+                <tr id="odd3">
+                    <td id="cat5"></td>
+                    <td id="tsk5"></td>
+                    <td id="td5">5</td>
+                </tr>
+                <tr id="even3">
+                    <td id="cat6"></td>
+                    <td id="tsk6"></td>
+                    <td id="td6">6</td>
+                </tr>
+                <tr id="odd4">
+                    <td id="cat7"></td>
+                    <td id="tsk7"></td>
+                    <td id="td7">7</td>
+                </tr>
+                <tr id="even4">
+                    <td id="cat8"></td>
+                    <td id="tsk8"></td>
+                    <td id="td8">8</td>
+                </tr>
+                <tr id="odd5">
+                    <td id="cat9"></td>
+                    <td id="tsk9"></td>
+                    <td id="td9">9</td>
+                </tr>
+                <tr id="even5">
+                    <td id="cat10"></td>
+                    <td id="tsk10"></td>
+                    <td id="td10">10</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3>Total Numbers of tasks added: <span id="total_number">0</span></h3>
+        <div id="submit"><a href="" id="subb">Submit</a></div>
+        <div id="clear"><a href="" id="clar">Clear</a></div>
+        <div>
+            <p id="sub_clr"></p>
+        </div>
+    </div>
+
+
+    <div id="foot">
+        <footer>
+            <p>Sources of images and videos from Pexels and Courtesy of Icon pack by Icons8 -- designed by Nushrah Yanida</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

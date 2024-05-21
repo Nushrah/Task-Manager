@@ -1,0 +1,91 @@
+#welcome{
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 1px;
+    background-color: #219ebc;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 50px;
+    height:100px;
+    line-height:100px;
+    width: 95%;
+    
+}
+
+#welcome_span{
+    color: #FFF670;
+}
+
+#information{
+    float: left;
+    width: 50%;
+    font-size: 130%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #a8dadc;
+    padding: 50px;
+  }
+  
+  .cards .red {
+    background-color: #457b9d;
+    margin:auto;
+  }
+  
+  .cards .blue {
+    background-color: #457b9d;
+    margin: auto;
+  }
+  
+  .cards .green {
+    background-color: #457b9d;
+    margin: auto;
+  }
+  
+  .cards .card {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: max-content;
+    width:90%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    /* filter: blur(10px); */
+    transform: scale(0.9, 0.9);
+  }
+
+
+#map_apply{
+    width: 50%;
+    font-size: 120%;
+    float: left;
+}
+#location_img{
+    width: 75%;
+    height: 60%;
+}

@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+#science{
+    font-size: 30px;
+    font-weight: bold;
+    width: 43%;
+    float: left;
+    margin: auto 5%;
+    text-align: center;
+    padding-top: 2%;
+}
+video{
+    float: left;
+    margin: 50px auto;
+    width: 40%;
+}
+#engineering{
+    font-size: 30px;
+    font-weight: bold;
+    width: 43%;
+    float: left;
+    margin: auto 5%;
+    text-align: center;
+    padding-top: 2% ;
+}
+table{
+    clear: both;
+    width: 95%;
+    text-align: center;
+    margin: 2% auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table th{
+    border: 1px solid black;
+    background-color: lightskyblue;
+    padding: 0.5%;
+}
+table td{
+    border: 1px solid black;
+    padding: 0.25%;
+}
+

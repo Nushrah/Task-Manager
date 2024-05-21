@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Nushrah Yanida">
+        <meta name="description" content="Instructions on how to use to-do list">
+        <meta name="keywords" content="to-do, list, to-do list, instructions">
+        
+        <title>Intruction Page</title>  
+        <link rel="stylesheet" type="text/css" href="../css/theme.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/PROGRAM.css">
+    </head>
+
+    <body>
+        <div id="head">
+            <header>
+                <img src="../images/clipboard.png" alt="clipboard logo" width="300" height="300">
+                
+                <div id="taskhead"><h1> Task Manager </h1></div>
+
+
+            </header>
+        </div>
+        <div id="navigation">
+            <nav>
+                
+                <div><a href="../index.html">Home</a></div>
+                <div><a href="./instructions.html" >Instructions</a></div>
+                <div><a href="./list_maker.html">List-Maker</a></div>
+
+                
+            </nav>
+        </div>
+
+        <h1>Instructions</h1>
+    <div id="science">
+        <p id="promo"></p>
+    </div>
+    <div id="videoContainer">
+        <video id="myVideo" width="800" controls="controls" autoplay="autoplay">
+            <source src="../videos/demo.mp4">
+        </video>
+    </div>
+
+    <script>
+        var videoSources = ["../videos/demo.mp4", "../videos/pretty.mp4"];
+        var currentVideoIndex = 0;
+
+        function switchVideo() {
+            var video = document.getElementById('myVideo');
+            currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
+            video.src = videoSources[currentVideoIndex];
+            video.load();
+            video.play();
+        }
+
+        document.getElementById('myVideo').addEventListener('ended', switchVideo);
+
+        switchVideo();
+
+        ////////////////////////////////////////////////////////////////
+
+        class PromotionManager {
+            constructor(promotions, elementId) {
+                this.promotions = promotions;
+                this.element = document.getElementById(elementId);
+                this.intervalId = null;
+            }
+
+            getRandomPromo() {
+                var randomIndex = Math.floor(Math.random() * this.promotions.length);
+                return this.promotions[randomIndex];
+            }
+
+            displayRandomPromo() {
+                var randomPromo = this.getRandomPromo();
+                this.element.innerHTML = randomPromo;
+            }
+
+            startRotation(interval) {
+                this.intervalId = setInterval(() => {
+                    this.displayRandomPromo();
+                }, interval);
+            }
+
+            stopRotation() {
+                clearInterval(this.intervalId);
+            }
+
+            displayInitialPromo() {
+                this.displayRandomPromo();
+                this.startRotation(3000);
+            }
+        }
+
+        var promotions = [
+            "Add in the rank of your chosen task.",
+            "Click the button to add the task to your list.",
+            "Enjoy being productive!"
+        ];
+
+        var promoManager = new PromotionManager(promotions, 'promo');
+        promoManager.displayInitialPromo();
+
+    </script>
+
+
+
+
+    <div id="foot">
+        <footer>
+            <p>Sources of images and videos from Pexels and Courtesy of Icon pack by Icons8 -- designed by Nushrah Yanida</p>
+        </footer>
+    </div>
+
+    </body>
+</html>            
